@@ -25,7 +25,7 @@ const projects = [
     location: "Bella Vista, AR",
     type: "Residential",
     scope: "",
-    image: "/project-section/1-Langholm.webp",
+    image: "/project-section/1-Langholm.JPG",
   },
   {
     name: "Full Home Remodel",
@@ -157,7 +157,11 @@ export function ProjectsSection() {
                   src={project.image}
                   alt={`${project.name} — ${project.type} in ${project.location}`}
                   fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
+                  sizes={
+                    index === 0
+                      ? "(max-width: 767px) 100vw, (max-width: 1280px) 66vw, 840px"
+                      : "(max-width: 767px) 100vw, (max-width: 1280px) 33vw, 420px"
+                  }
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
 

@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import { Inter, Oswald } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const oswald = Oswald({
@@ -56,6 +57,7 @@ export default function RootLayout({
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
+        <SpeedInsights/>
       </body>
     </html>
   )
