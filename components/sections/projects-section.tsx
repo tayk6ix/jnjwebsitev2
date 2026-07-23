@@ -32,7 +32,7 @@ const projects = [
     location: "Joplin, MO",
     type: "Residential/Commercial Remodels",
     scope: "Foundation and up full renovation",
-    image: "/project-section/Joplin.jpg",
+    image: "/project-section/Joplin2.png",
   },
   {
     name: "Hatchery",
