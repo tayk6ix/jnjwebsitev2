@@ -69,10 +69,10 @@ export function HeroSection() {
           className="absolute inset-0 -z-10"
         >
           <Image
-            src="/project-section/Joplin.jpg"
+            src="/project-section/Joplin2.png"
             alt="J&J Construction crew working on a commercial jobsite in Northwest Arkansas"
             fill
-            priority
+            preload
             loading="eager"
             sizes="100vw"
             className="object-cover"
